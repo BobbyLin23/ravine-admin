@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run:client": "pnpm -F @ravine-admin/client dev",
+    "run:server": "pnpm -F @ravine-admin/server start:dev"
   },
   "keywords": [],
   "author": "",

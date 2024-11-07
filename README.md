@@ -6,11 +6,17 @@ Ravine Admin is a open source project that provides a admin dashboard.
 It is built with React.js, Vite, TypeScript, Shadcn UI, and Tailwind CSS.
 
 ## Tech Stack
+### Frontend
 - React.js
 - Vite
 - TypeScript
 - Shadcn UI
 - Tailwind CSS
+
+### Backend
+- Nest.js
+- Prisma
+- PostgreSQL
 
 ## Project Structure
 
