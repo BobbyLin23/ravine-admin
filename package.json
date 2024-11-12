@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "run:client": "pnpm -F @ravine-admin/client dev",
-    "run:server": "pnpm -F @ravine-admin/server start:dev"
+    "run:server": "pnpm -F @ravine-admin/server start:dev",
+    "postinstall": "pnpm -r run stub --if-present"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@ravine-admin/tailwind-config": "workspace:*",
     "@ravine-admin/tsconfig": "workspace:*",
     "@types/node": "^22.9.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "unbuild": "^2.0.0"
   }
 }

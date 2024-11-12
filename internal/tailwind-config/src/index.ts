@@ -73,52 +73,11 @@ const shadcnUiColors = {
   },
 }
 
-const customColors = {
-  green: {
-    ...createColorsPalette('green'),
-    foreground: 'hsl(var(--success-foreground))',
-  },
-  header: {
-    DEFAULT: 'hsl(var(--header))',
-  },
-  heavy: {
-    DEFAULT: 'hsl(var(--heavy))',
-    foreground: 'hsl(var(--heavy-foreground))',
-  },
-  main: {
-    DEFAULT: 'hsl(var(--main))',
-  },
-  overlay: {
-    content: 'hsl(var(--overlay-content))',
-    DEFAULT: 'hsl(var(--overlay))',
-  },
-  red: {
-    ...createColorsPalette('red'),
-    foreground: 'hsl(var(--destructive-foreground))',
-  },
-  sidebar: {
-    deep: 'hsl(var(--sidebar-deep))',
-    DEFAULT: 'hsl(var(--sidebar))',
-  },
-  success: {
-    ...createColorsPalette('success'),
-    DEFAULT: 'hsl(var(--success))',
-  },
-  warning: {
-    ...createColorsPalette('warning'),
-    DEFAULT: 'hsl(var(--warning))',
-  },
-  yellow: {
-    ...createColorsPalette('yellow'),
-    foreground: 'hsl(var(--warning-foreground))',
-  },
-}
-
 export default {
   content: [
     './index.html',
     ...tailwindPackages.map((item) =>
-      path.join(item, 'src/**/*.{vue,js,ts,jsx,tsx,svelte,astro,html}'),
+      path.join(item, 'src/**/*.{vue,js,ts,jsx,tsx,svelte,html}'),
     ),
   ],
   darkMode: 'selector',
@@ -163,7 +122,6 @@ export default {
           0 9px 28px 8px rgb(0 0 0 / 5%)`,
       },
       colors: {
-        ...customColors,
         ...shadcnUiColors,
       },
       fontFamily: {
