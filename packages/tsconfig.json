@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "composite": true,
+    "declaration": true,
+    "useDefineForClassFields": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "removeComments": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "noEmitOnError": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "paths": {}
+  },
+  "include": [
+    "./packages/**/*.ts",
+    "./packages/**/*.d.ts",
+    "./packages/**/*.tsx"
+  ],
+  "exclude": ["node_modules", "**/test/**/*.ts", "**/__test__/**/*.ts"]
+}
