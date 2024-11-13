@@ -14,8 +14,9 @@
   "devDependencies": {
     "@ravine-admin/tailwind-config": "workspace:*",
     "@ravine-admin/tsconfig": "workspace:*",
+    "@ravine-admin/eslint-config": "workspace:*",
+    "@ravine-admin/prettier-config": "workspace:*",
     "@types/node": "^22.9.0",
-    "prettier": "^2.3.2",
     "unbuild": "^2.0.0"
   }
 }

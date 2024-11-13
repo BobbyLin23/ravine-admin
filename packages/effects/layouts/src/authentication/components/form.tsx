@@ -1,11 +1,18 @@
 type AuthenticationFormProps = {
   children: React.ReactNode
+  copyright: React.ReactNode
 }
 
-export const AuthenticationForm = ({ children }: AuthenticationFormProps) => {
+export const AuthenticationForm = ({
+  children,
+  copyright,
+}: AuthenticationFormProps) => {
   return (
     <div className="flex-col-center dark:bg-background-deep bg-background relative px-6 py-10 lg:flex-initial lg:px-8">
       {children}
+      <div className="text-muted-foreground absolute bottom-3 flex text-center text-xs">
+        {copyright}
+      </div>
     </div>
   )
 }

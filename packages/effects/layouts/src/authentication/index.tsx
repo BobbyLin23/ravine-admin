@@ -6,9 +6,22 @@ export const AuthenticationLayout = ({
   children,
 }: AuthenticationLayoutProps) => {
   return (
-    <div className="flex min-h-full flex-1 select-none overflow-x-hidden bg-red-50">
-      <div>Auth Layout</div>
-      {children}
+    <div className="flex min-h-full flex-1 select-none overflow-x-hidden">
+      {/* Toolbar */}
+      {/* <AuthenticationFormView
+      v-if="authPanelLeft"
+      class="min-h-full w-2/5 flex-1"
+      transition-name="slide-left"
+    >
+      <template v-if="copyright" #copyright>
+        <slot name="copyright">
+          <Copyright
+            v-if="preferences.copyright.enable"
+            v-bind="preferences.copyright"
+          />
+        </slot>
+      </template>
+    </AuthenticationFormView> */}
     </div>
   )
 }
